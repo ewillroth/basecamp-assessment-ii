@@ -44,11 +44,11 @@ var adjustCount = {
   upVote: function(n){
     var n = n++;
     return n;
-  }; ,
+  } ,
   downVote: function(num){
     var num = num--;
     return num;
-  };,
+  }
 };
 
 /**
