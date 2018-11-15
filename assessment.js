@@ -46,8 +46,8 @@ var adjustCount = {
     return n;
   } ,
   downVote: function(num){
-    var num = num--;
-    return num;
+    var n = n--;
+    return n;
   }
 };
 
@@ -110,6 +110,12 @@ var peopleIknow = [
   { name: "Holly", friend: true }
 ];
 
+var trueFriends = peopleIknow.filter(function(val){
+    if (val.friend===true){
+      return val;
+    }
+})
+
 /**
  * #10
  *
@@ -120,3 +126,13 @@ var peopleIknow = [
  */
 
 let randomNumbers = [1, 3453, 34, 456, 32, 3, 2, 0];
+
+function indexFinder(arr){
+  var indexArray = [];
+  for(i=0;i<arr.length;i++){
+  indexArray.push(i);
+  }
+  return indexArray;
+}
+
+var indexes = indexFinder(randomNumbers);
