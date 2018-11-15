@@ -5,7 +5,7 @@
  * Assign the keys the appropriate values.
  */
 
-// CODE HERE
+var me = {firstname:'Eric',age:'28',state:'Texas'};
 
 /**
  * #2
@@ -14,7 +14,7 @@
  * The new key should be 'faveColor'. Set it to your favorite color as a string.
  */
 
-// CODE HERE
+me.faveColor = "Red";
 
 /**
  * #3
@@ -29,7 +29,8 @@ var message = {
   userName: me.firstname
 };
 // DON'T TOUCH THE CODE ABOVE
-// CODE HERE
+
+message.text = "Text";
 
 /**
  * #4
@@ -39,7 +40,16 @@ var message = {
  * downVote() should take in a number, subtract one from it, and return the number.
  */
 
-// CODE HERE
+var adjustCount = {
+  upVote: function(n){
+    var n = n++;
+    return n;
+  }; ,
+  downVote: function(num){
+    var num = num--;
+    return num;
+  };,
+};
 
 /**
  * #5
@@ -47,7 +57,7 @@ var message = {
  * Create an array called 'myFriends' with four of your friends names.
  */
 
-// CODE HERE
+var myFriends = ['kody', 'sarah', 'rachel', 'robbie'];
 
 /**
  * #6
@@ -55,7 +65,7 @@ var message = {
  * Add a fifth friends name to the end of your 'myFriends' array.
  */
 
-// CODE HERE
+myFriends.push('jay')
 
 /**
  * #7
@@ -67,7 +77,7 @@ var message = {
 // DON'T TOUCH THE CODE BELOW
 var myArray = [1, 2, 3, 4];
 // DON'T TOUCH THE CODE ABOVE
-// CODE HERE
+var myArrayCopy = myArray.map(function(val){return val;})
 
 /**
  * #8
@@ -79,9 +89,9 @@ var myArray = [1, 2, 3, 4];
 //DON'T TOUCH THE CODE BELOW
 var myNumbers = [333, 1, 4, 5, 511, 34, 88, 77, 222];
 //DON'T TOUCH THE CODE ABOVE
-function evensOnly() {
-  // CODE HERE
-}
+function evensOnly(arr) {
+  var evenNumbers = arr.filter(function(val){if(val%2===0){return val};})
+  return evenNumbers;};
 
 /**
  * #9
