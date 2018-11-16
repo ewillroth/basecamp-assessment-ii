@@ -42,11 +42,11 @@ message.text = "Text";
 
 var adjustCount = {
   upVote: function(n){
-    var n = n++;
+    n++;
     return n;
   } ,
-  downVote: function(num){
-    var n = n--;
+  downVote: function(n){
+    n--;
     return n;
   }
 };
