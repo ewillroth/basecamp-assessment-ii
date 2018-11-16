@@ -89,9 +89,14 @@ var myArrayCopy = myArray.map(function(val){return val;})
 //DON'T TOUCH THE CODE BELOW
 var myNumbers = [333, 1, 4, 5, 511, 34, 88, 77, 222];
 //DON'T TOUCH THE CODE ABOVE
-function evensOnly(arr) {
-  var evenNumbers = arr.filter(function(val){if(val%2===0){return val};})
-  return evenNumbers;};
+function evensOnly(arr){
+  var evenNumbers = arr.filter(function(val){
+    if(val%2===0){
+      return val
+    };
+  })
+  return evenNumbers;
+};
 
 /**
  * #9
